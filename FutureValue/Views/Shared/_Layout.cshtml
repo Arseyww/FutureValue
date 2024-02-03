@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @* Bootstrap *@
+    <link rel="stylesheet" asp-href-include="/lib/bootstrap/css/bootstrap.min.css" />
+
+    @* Custom css *@
+    <link rel="stylesheet" asp-href-include="/css/custom.css" />
+
+</head>
+<body>
+    <div class="container">
+        <header class="bg-light rounded border">
+            <img alt="Murach logo" src="~/images/MurachLogo.jpg" class="img-fluid rounded" />
+        </header>
+        <main>
+            @RenderBody()
+        </main>
+    </div>
+    @*Bootstrap JavaScript*@
+    <script asp-src-include="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
